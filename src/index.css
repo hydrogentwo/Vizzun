@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+html, body, #root {
+  height: 100%;
+  background: #050803;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* terminal scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #14532d #050803;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: #050803;
+}
+*::-webkit-scrollbar-thumb {
+  background: #14532d;
+  border: 1px solid #052e16;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #166534;
+}
+
+/* subtle phosphor flicker on the whole shell */
+@keyframes phosphor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.985; }
+}
+
+#root {
+  animation: phosphor 5s ease-in-out infinite;
+}

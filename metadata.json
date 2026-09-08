@@ -1,0 +1,6 @@
+{
+  "name": "A287324 Visualizer",
+  "description": "Terminal-styled interactive visualizer for OEIS A287324 with 4D lattice projections and exportable Rust GPU projects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
